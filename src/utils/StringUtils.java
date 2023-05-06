@@ -51,6 +51,14 @@ public class StringUtils {
         }
     }
 
+    public static Date toDateTest(String sdate) {
+        try {
+            return dateFormater.get().parse(sdate);
+        } catch (ParseException e) {
+            return null;
+        }
+    }
+
     /**
      * yyyy-MM-dd
      *
